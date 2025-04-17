@@ -4,17 +4,63 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Our Company  Website</title>
+        <link rel="stylesheet" href="Style.css">
     </head>
-    <header> 
-        <nav class ="navigation bar">
-            <ul class = "navigation-list"></ul>
+    <header class="header-container"> 
+        <img class ="header-logo" src="companylogo.jpg" alt="our logo">
+        <nav class ="navigation-bar">
+            <ul class = "navigation-list">
             <li><a href="Style.css">Home</a></li>  
             <li><a href="Style.css">About Us</a></li>  
             <li><a href="Style.css">Portofolio</a></li>  
             <li><a href="Style.css">Message Us</a></li>  
+            </ul>
         </nav>
     </header>
     <body> 
-        <h1> Welcome to Our Website!</h1>
-        <img src="ourcompany.jpg">
+        <section id="Home" class="section-home">
+            <h1 id="welcome-text" class="section-home">Hi there, Welcome to Our Website!</h1>
+            <img class="home-image" src="ourcompanybanner.jpg" alt = "Company Banner">
+        </section>
+        <section id="About Us" class="section-aboutus">
+            <h2 class="section-aboutus"> About Us</h2> 
+            <img class="aboutus-image" src="ourcompany.jpg" alt = "Our Company">
+            <h3 class="section-aboutus"> Our Vision and Mission</h3>
+            <h4 class="section-aboutus"> Vision</h4>
+            <p class="section-aboutus">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <h3 class="section-aboutus"> Mission</h3>
+            <ol class="section-aboutus"> 
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+            </ol> 
+        </section>
+        <section id="Portofolio" class="section-portofolio">
+            <h2 class="section-portofolio"> Our Headquarters </h2>
+            <div class="image-container">
+                <img src="office1.jpg" alt="HQ 1">
+                <img src="office2.jpg" alt="HQ  2">
+                <img src="office3.jpg" alt="HQ 3">
+            </div>
+            <h2 class="section-portofolio">Our History </h2>
+            <img class="portofolio-history" src="ourhistory.jpg" alt="Our History">
+        </section>
+        <section id="Message Us" class="section-messageus">
+            <h2 class="section-messageus"> Message Us! </h2>
+            <form class="section-messageus">
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="dob"> Date of Birth: </label><br>
+                    <input type="date" id="dob" name="dob"><br>
+                    <label for="phonenumber">Phone Number<label><br>
+                    <input type="text" id="phonenumber" name="phonenumber"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="message">Message:</label><br>
+                    <input type="text" id="message" name="message"><br>
+                    <input type="submit" value="Submit"><br>
+            </form>     
+        </section> 
+    <script src="script.js"></script>
     </body>
+</html>
