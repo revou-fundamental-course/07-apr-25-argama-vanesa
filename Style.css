@@ -1,19 +1,22 @@
-.header-container{
+.header-container {
     background-color: navy;
+    padding: 10px; /* Add some padding to space the content */
+    text-align: center; /* Center the content within the container */
 }
 
 .header-logo {
-    width: 100%;
+    width: 100%;  /* Make it responsive */
+    max-width: 30px; /* Optionally, set a maximum width for the logo */
     height: auto;
     background-color: navy;
     border: 6px ridge black;
     padding: 3px;
     border-radius: 5px;
-    display: inline-block; /* Make the container fit the logo */
-  }
-  
-  .header-logo img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
+    display: inline-block;
+    box-sizing: border-box; 
+}
+.header-logo img {
+    width: 100%;  
+    height: auto; 
+    border-radius: 5px;  
+}
