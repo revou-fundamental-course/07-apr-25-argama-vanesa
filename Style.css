@@ -76,13 +76,22 @@ header {
     color: #ffffff;
 }
 
+/* Perbesar ukuran untuk Vision dan Mission */
+.section-aboutus h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Paragraf rata kiri tapi tetap center secara blok */
 .section-aboutus p {
     max-width: 800px;
     margin: 0 auto 20px auto;
     line-height: 1.6;
     font-size: 16px;
+    text-align: left;
 }
 
+/* List juga rata kiri tapi tetap center secara blok */
 .section-aboutus ol {
     list-style-position: inside;
     padding-left: 0;
