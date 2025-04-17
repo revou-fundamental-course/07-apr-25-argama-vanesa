@@ -1,7 +1,6 @@
 /* Base styles for the overall layout */
 body {
     font-family: comic, sans-serif;
-    background-image: url("companylogo.jpg") ;
     margin: 0;
     padding: 0;
 }
@@ -55,7 +54,7 @@ section {
 /* About Us Section */
 .section-aboutus {
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-image: url("ourcompanybanner.jpg");
     color: #333;
     text-align: center;
 }
