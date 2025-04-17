@@ -31,26 +31,9 @@ document.getElementById("nameForm").addEventListener("submit", function(event) {
   }
 });
 
-document.querySelectorAll('.clickable-image').forEach(img => {
-  img.addEventListener('click', () => {
-      // Tambah efek kursor terbalik
-      img.classList.add('reverse-cursor');
-
-      // Hapus popup sebelumnya (jika ada)
-      const existingPopup = img.parentElement.querySelector('.location-popup');
-      if (existingPopup) existingPopup.remove();
-
-      // Buat elemen popup lokasi
-      const popup = document.createElement('div');
-      popup.className = 'location-popup';
-      popup.innerText = img.getAttribute('data-location');
-      img.parentElement.appendChild(popup);
-
-      // Hapus popup dan efek cursor setelah 2 detik
-      setTimeout(() => {
-          popup.remove();
-          img.classList.remove('reverse-cursor');
-      }, 2000);
+document.querySelectorAll('.flip-card').forEach(card => {
+  card.addEventListener('click', () => {
+      card.classList.toggle('flipped');
   });
 });
 
