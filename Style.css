@@ -2,11 +2,18 @@
     background-color: navy;
 }
 
-.header-header-logo{
+.header-logo {
     width: 100%;
     height: auto;
     background-color: navy;
     border: 6px ridge black;
     padding: 3px;
     border-radius: 5px;
-}
+    display: inline-block; /* Make the container fit the logo */
+  }
+  
+  .header-logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
