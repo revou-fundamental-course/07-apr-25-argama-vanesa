@@ -1,0 +1,10 @@
+.header-container{
+    background-color: navy;
+}
+
+.header-header-logo{
+    background-color: navy;
+    border: 6px ridge black;
+    padding: 3px;
+    border-radius: 5px;
+}
