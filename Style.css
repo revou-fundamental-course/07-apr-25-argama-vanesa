@@ -22,6 +22,8 @@ header {
     color: white;
     padding: 20px;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header-logo {
@@ -64,8 +66,9 @@ header {
 .section-aboutus {
     padding: 40px 20px;
     color: #ffffff;
-    text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 0 auto 60px auto;
 }
 
 .section-aboutus h2,
@@ -74,29 +77,25 @@ header {
     margin-top: 20px;
     margin-bottom: 10px;
     color: #ffffff;
+    text-align: center;
 }
 
-/* Perbesar ukuran untuk Vision dan Mission */
 .section-aboutus h3 {
     font-size: 24px;
     font-weight: bold;
 }
 
-/* Paragraf rata kiri tapi tetap center secara blok */
 .section-aboutus p {
-    max-width: 800px;
-    margin: 0 auto 20px auto;
+    margin-bottom: 20px;
     line-height: 1.6;
     font-size: 16px;
     text-align: left;
 }
 
-/* List juga rata kiri tapi tetap center secara blok */
 .section-aboutus ol {
     list-style-position: inside;
     padding-left: 0;
-    margin: 0 auto;
-    max-width: 600px;
+    margin: 0;
     text-align: left;
 }
 
@@ -111,6 +110,9 @@ header {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
     margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-portofolio h2 {
