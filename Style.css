@@ -156,24 +156,29 @@ header {
 }
 
 .flip-card {
-    width: 300px; 
+    background-color: transparent;
+    width: 300px;
     height: 200px;
     perspective: 1000px;
     cursor: pointer;
 }
 
 .flip-inner {
+    position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    position: relative;
+}
+
+.flip-card.flipped .flip-inner {
+    transform: rotateY(180deg);
 }
 
 .flip-front, .flip-back {
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
@@ -183,8 +188,7 @@ header {
 .flip-front img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    display: block;
+    object-fit: cover;
 }
 
 .flip-back {
@@ -197,6 +201,7 @@ header {
     font-size: 24px;
     font-weight: bold;
 }
+
 
 @keyframes fadeIn {
     from { opacity: 0; }
