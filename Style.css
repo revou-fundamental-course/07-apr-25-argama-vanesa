@@ -1,6 +1,6 @@
 .header-container {
     background-color: navy;
-    padding: 10px; /* Add some padding to space the content */
+    padding: 3px; /* Add some padding to space the content */
 }
 
 .header-logo {
@@ -19,3 +19,13 @@
     height: auto; 
     border-radius: 5px;  
 }
+.navigation-bar{
+ background-color: navy;   
+ padding : 3px
+}
+.navigation-list{
+    align-content: flex-end;
+    display : flex;
+    background-color: navy;   
+    padding : 3px
+   }
